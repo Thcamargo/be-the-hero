@@ -1,25 +1,25 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React from 'react'; // React, { useState }
+
+import './global.css'
+import Routes from './routes';
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+ /* const [counter, setCounter] = useState(0);
+
+  // Estado retorna um Array [valor da variavel, função de atualização que consegue alterar o valor da variável]
+
+  function increment() {
+    setCounter(counter + 1);   
+  }*/
+
+  return ( 
+    <Routes />
+     /* <div>
+      <Header>
+        Contador: {counter}
+      </Header>
+      <button onClick = {increment}> Incrementar </button>
+   </div>*/
   );
 }
 
